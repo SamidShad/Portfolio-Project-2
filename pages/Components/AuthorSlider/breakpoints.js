@@ -1,4 +1,6 @@
-const breakpoints = {
+import React from "react";
+
+export const breakpoints = {
   1500: {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -27,4 +29,8 @@ const breakpoints = {
   },
 };
 
-export default breakpoints;
+function responsiveAuthSlider() {
+  return <></>;
+}
+
+export default responsiveAuthSlider;

@@ -3,7 +3,7 @@ import styles from "@/styles/AuthorSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
-import breakpoints from "./breakpoints";
+import { breakpoints } from "./breakpoints";
 import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css/free-mode";
 import "swiper/css";

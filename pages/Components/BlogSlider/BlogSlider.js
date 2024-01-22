@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import imageUrlBuilder from "@sanity/image-url";
 import "swiper/css/free-mode";
 import "swiper/css";
-import breakpoints from "./breakpoints";
+import { breakpoints } from "./breakpoints";
 import Link from "next/link";
 
 function BlogSlider({ blogPosts }) {
