@@ -1,0 +1,161 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  transition: 0.3s;
+  position: fixed;
+  z-index: 10;
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+}
+.navbar h1 {
+  color: var(--text-color);
+}
+
+.navbar_menu_icon {
+  display: none;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+  cursor: pointer;
+  color: var(--text-color);
+  margin: 30px;
+}
+
+.navbar li:hover {
+  color: #56ccf2;
+}
+.navbar li:active {
+  color: #00ace6;
+}
+
+.navbar_icons_container {
+  display: flex;
+}
+
+.nav_icon {
+  margin: 10px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.nav_search_bar_container {
+  display: flex;
+  justify-content: space-evenly;
+  transition: 0.3s;
+  align-items: center;
+  transform: translateY(-300px);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: var(--navbar-color);
+  z-index: 9;
+}
+
+.nav_search_bar_active {
+  transform: translateY(0px);
+  z-index: 11;
+}
+
+.nav_search_bar_container input {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  outline: none;
+  margin: 10px;
+  padding: 10px;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.search_bar_close_icon {
+  color: var(--text-color);
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.nav_drawer {
+  display: none;
+  background-color: var(--nav-drawer);
+  position: fixed;
+  z-index: 11;
+  width: 350px;
+  transform: translateX(-500px);
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.nav_drawer_active {
+  transform: translateX(0px);
+}
+
+.drawer_header {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+
+.nav_drawer h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.drawer_close_icon {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.drawer_links li {
+  color: white;
+  margin: 30px;
+  font-size: 25px;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drawer_links li:hover {
+  color: #56ccf2;
+}
+.drawer_links li:active {
+  color: #00ace6;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar_menu_icon {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .nav_drawer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav_drawer {
+    width: 250px;
+  }
+}
