@@ -81,3 +81,12 @@
   width: 100%;
   margin: 10px;
 }
+
+@media only screen and (max-width: 708px) {
+  .author_post_name {
+    text-align: center;
+    margin: 30px;
+    margin: 10px;
+    font-size: 35px;
+  }
+}
